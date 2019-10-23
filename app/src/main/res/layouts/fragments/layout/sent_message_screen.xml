@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/alertRow_layoutAlert"
+    android:padding="@dimen/padding_5"
+    android:layout_gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/hi_otp"
+        android:fontFamily="@font/ramaraja"
+        android:textSize="@dimen/spacing_20"
+        />
+
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/otp_gen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+     />
+    <EditText
+        android:id="@+id/edt_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/write_sms_here"
+        android:fontFamily="@font/ramaraja"
+        android:textSize="@dimen/spacing_20"/>
+
+    <Button
+        android:id="@+id/sent_OTP"
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:text="@string/send_OTP"
+        android:layout_margin="@dimen/margin_5"
+        android:fontFamily="@font/ramaraja"
+        android:textSize="@dimen/spacing_20"/>
+
+</LinearLayout>
